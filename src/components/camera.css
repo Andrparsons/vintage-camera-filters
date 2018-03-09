@@ -1,34 +1,27 @@
 .camera {
   display: flex;
   flex-flow: column nowrap;
+  width: 100%;
 }
 
 .photo {
   align-self: center;
+  max-width: 100vw
 }
 
 .player {
-  
-  position: absolute;
-  top:20px;
-  right: 20px;
-  width:200px;
+  display: none;
 }
 
-.strip {
-  padding: 2rem;
+html {
+  box-sizing: border-box;
 }
 
-.strip img {
-  width: 100px;
-  overflow-x: scroll;
-  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  background: white;
+*, *:before, *:after, {
+  box-sizing: inherit;
 }
 
-.strip a:nth-child(5n+1) img { rotate: 10deg; }
-.strip a:nth-child(5n+2) img { rotate: -2deg; }
-.strip a:nth-child(5n+3) img { rotate: 8deg; }
-.strip a:nth-child(5n+4) img { rotate: -11deg; }
-.strip a:nth-child(5n+5) img { rotate: 12deg; }
+html {
+  font-size: 10px;
+  background: #FFC600;
+}
